@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Our Services</title>
+	<style>
+		body {
+			background-color: white;
+			color: #333;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			color: #ffcc00;
+			font-size: 3rem;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 50px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: flex-start;
+			margin-bottom: 50px;
+		}
+		.service {
+			background-color: #f5f5f5;
+			border: 2px solid #ddd;
+			border-radius: 10px;
+			padding: 20px;
+			margin: 20px;
+			flex-basis: 300px;
+			flex-grow: 1;
+			box-shadow: 2px 2px 10px #ddd;
+		}
+		.service h2 {
+			font-size: 2rem;
+			margin-top: 0;
+			margin-bottom: 20px;
+			color: #333;
+		}
+		.service p {
+			font-size: 1.2rem;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+		.contact {
+			background-color: #ffcc00;
+			border-radius: 10px;
+			padding: 30px;
+			margin: 0 auto;
+			max-width: 600px;
+			box-shadow: 2px 2px 10px #ddd;
+		}
+		.contact label {
+			display: block;
+			font-size: 1.2rem;
+			margin-bottom: 10px;
+			color: #333;
+		}
+		.contact input[type="email"], .contact textarea {
+			width: 100%;
+			padding: 10px;
+			font-size: 1.2rem;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: none;
+		}
+		.contact input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			font-size: 1.2rem;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.contact input[type="submit"]:hover {
+			background-color: #ffcc00;
+			color: #333;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Our Services</h1>
+		<div class="services">
+			<div class="service">
+				<h2>Service 1: Website Development</h2>
+				<p>We make cool designs and also make the interface very simple and beautiful. We help in making website right from scratch and also help our customers to host their websites and give them consultancy on how they should grow more. </p>
+				
+			</div>
+			<div class="service">
+				<h2>Service 2: Testing Web Pages.</h2>
+				<p>Nowadays, Security plays a significant role. We provide best testing services for your web pages that keeps the bugs away and prevents the website from crashing and also keeps the data safe from hackers.</p>
+				
+			</div>
+			<div class="service">
+				
+<h2>Service 3: Application Development.</h2>
+				<p>We turn your websites into mobile applications. This help the customers to grow their reach and generate more revenue. We also help them in setting up their app on platforms like PlayStore and AppStore.  </p>
+				
+			</div>
+		</div>
+		<div class="contact-box">
+			<h2>Contact Us</h2>
+			<form action="submit.php" method="POST">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+</body>
